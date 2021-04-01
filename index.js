@@ -10,3 +10,15 @@ if (readline.keyInYN('Are you ready to play this game \n'))
 } else {
   log('Adios mate')
 }
+
+function play(question, answer) {
+    var userAnswer = readline.question(question + '\n\n')
+    if (userAnswer.toUpperCase() == answer.toUpperCase()) {
+      score++;
+      log('That is Correct')
+    } else {
+      log('That is Wrong')
+    }
+    log('Your score is: ' + score)
+    log('------------------------')
+  }
