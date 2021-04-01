@@ -66,3 +66,7 @@ question = [
 }
 ]
 
+for (var i = 0; i < question.length; i++) {
+    log('#' + (i + 1) + ' question')
+    play(question[i]['question'], question[i]['answer'])
+  }
